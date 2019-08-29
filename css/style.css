@@ -1,0 +1,80 @@
+/* #E5fcc2    #9de0ad #45ada8 #547980*/
+body {
+    background-color: #fafffb;
+}
+.container {
+    font-family: "Times New Roman", Times, serif;
+    width: 100%;
+     margin:0px;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 100px auto 100px;
+     grid-template-areas:
+            "h h h  "
+            "ml cc mr "
+            "f f f ";
+}
+/* headerio formatavimas*/
+.header {
+    font-size: 2em;
+    display: grid;
+    grid-area: h;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-auto-rows: 100px;
+    grid-template-areas: "a b c";
+}
+.header > div {
+    width: 100%;
+}
+.header img {
+    height: 80px;
+}
+.logo{
+    grid-area: a;
+    text-align: center;
+    align-self: center;
+}
+.navigation {
+    grid-area: b;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+}
+.login {
+    grid-area: c;
+    align-self: center;
+    text-align: center;
+   }
+.header a{
+    color: #45ada8;
+}
+.header a:hover{
+    color: #547980;
+}
+/* soninio meniu formatavimas*/
+.menu1 {
+    grid-area: ml;
+
+}
+.menu2 {
+    grid-area: mr;
+
+}
+
+/* straipsniu koregavimas*/
+.content {
+    grid-area: cc;
+    font-size: 1.5em;
+}
+.content img{
+    height: 400px;
+}
+/*    grid-template-columns: 200px auto;*/
+/*    grid-template-rows: 200px auto;*/
+/*    grid-template-areas: "d e" "e e";*/
+/*}*/
+.footer {
+    grid-area: f;
+background-color: red;
+}
