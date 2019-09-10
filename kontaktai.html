@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontaktai</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+<div class="container2">
+
+    <div class="header">
+        <div class="logo">
+            <svg height="150" width="250">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#45ada8;stop-opacity:1"></stop>
+                        <stop offset="100%" style="stop-color:#f0fcfb;stop-opacity:1"></stop>
+                    </linearGradient>
+                </defs>
+                <ellipse cx="140" cy="80" rx="100" ry="40" fill="url(#grad1)"></ellipse>
+                <text x="140" y="100" text-anchor="middle" fill="white" font-size="60px" >LJ</text>
+            </svg>
+            <!--            <img src="img/logo.jpg" alt="logotipas">-->
+        </div>
+        <div class="navigation">
+            <a href="/index.html">Apie mane</a>
+            <a href="/portfolio.html">Portfolio</a>
+            <a href="/kontaktai.html">Kontaktai</a>
+        </div>
+        <div class="login">
+            <a href="#" class="glyphicon glyphicon-user" aria-hidden="true"> Admin </a>
+        </div>
+    </div>
+
+<div class="contactMap">
+
+        <img src="/img/map.jpg" alt="zemelapis">
+
+<!--    <script>-->
+<!--        function myMap() {-->
+<!--            let mapProp= {-->
+<!--                center:new google.maps.LatLng(51.508742,-0.120850),-->
+<!--                zoom:5,-->
+<!--            };-->
+<!--            let map = new google.maps.Map(document.getElementById("googleMap"),mapProp);-->
+<!--        }-->
+<!--    </script>-->
+<!--    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>-->
+
+</div>
+
+    <div class="contactForm">
+        <label for="vardas">Vardas:   </label> <input type="text" name="name" id="vardas" size="50px" ><br><br>
+        <label for="pastas">El. paštas</label> <input type="email" name="mail" id="pastas" size="50px"><br><br>
+        <label for="zinute"> Žinutė:</label><br><textarea rows="10" cols="80" id="zinute"></textarea><br><br>
+        <div class="mygtukas1"><input type="submit" value="SIŲSTI" class="mygtukas" id="siusti"></div><br><br>
+        <input type="button" class="mygtukas1" value="Sudeti">
+        <input type="button" class="mygtukas1" value="Atimti">
+        <input type="button" class="mygtukas1" value="Dauginti">
+        <input type="button" class="mygtukas1" value="Dalinti">
+        <div id="rez">Atsakymas.:</div>
+</form>
+
+    </div>
+
+
+    <div class="footer">
+        <div class="rights">
+            <p>Visos teisės saugomos &copy 2019</p>
+        </div>
+        <div class="other">
+            <p>Sukurta: Lauros Januškevičienės</p>
+        </div>
+    </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/kodas.js"></script>
+</body>
+
+</html>
